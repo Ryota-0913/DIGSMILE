@@ -1,0 +1,41 @@
+.company {
+  padding-bottom: 120px;
+  &-inner {
+    border-top: 1px solid $color-06;
+    margin: 30px 0 40px;
+  }
+  &-table {
+    margin-left: auto;
+    margin-right: 0;
+    text-align: left;
+    max-width: 800px;
+  }
+  &-tr {
+    border-bottom: 1px solid $color-06;
+    display: block;
+    padding: 20px 0;
+  }
+  &-th {
+    font-family: '游ゴシック体';
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.06px;
+    width: 150px;
+  }
+  &-td {
+    font-family: '游ゴシック体';
+    font-size: 16px;
+    letter-spacing: 0.06px;
+    width: 650px;
+  }
+  &-map {
+    max-width: 1100px;
+  }
+  @include mq ('sp') {
+    padding-bottom: 40px;
+  }
+}
+
+iframe {
+  width: 100%;
+}

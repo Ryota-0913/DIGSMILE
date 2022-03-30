@@ -1,0 +1,27 @@
+.vision {
+  &-inner {
+    margin: 0 459px 0 226px;
+    max-width: 415px;
+  }
+  &-head {
+    font-family: '游ゴシック体';
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.12px;
+    margin: 30px 0;
+  }
+  &-message {
+    font-family: 'Noto Sans JP';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+  @include mq ('sp') {
+    &-inner {
+      margin: 0;
+    }
+    &-message {
+      font-size: 14px;
+    }
+  }
+}

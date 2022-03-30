@@ -1,0 +1,122 @@
+.form {
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 120px 0;
+  text-align: center;
+  &-text {
+    font-family: 'Noto Sans JP';
+    font-size: 16px;
+    letter-spacing: 0.06px;
+    line-height: 16*1.5px;
+    margin-bottom: 54px;
+    text-align: left;
+  }
+  &-contents {
+    margin-bottom: 40px;
+    text-align: left;
+  }
+  &-label {
+    font-family: 'Noto Sans JP Bold';
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.06px;
+    &__sub {
+      font-family: '游ゴシック体';
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0.06px;
+    }
+    &__en {
+    font-family: 'Montserrat ExtraBold';
+      font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.06px;
+    }
+  }
+  &-span {
+    background-color: $color-04;
+    color: $color-01;
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 0.05px;
+    line-height: 15px;
+    margin-left: 10px;
+    padding: 0 5px 1px;
+    vertical-align: top;
+    vertical-align: top;
+  }
+  &-content {
+    display: flex;
+    margin-top: 18px;
+    &__item {
+      margin-right: 50px;
+    }
+    &__item:last-of-type {
+      margin-right: 0;
+    }
+  }
+  &-radio {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 10px;
+    margin-top: 0;
+  }
+  &-item {
+    margin-bottom: 40px;
+    text-align: left;
+  }
+  &-txt {
+    border-radius: 1px;
+    box-sizing: border-box;
+    display: block;
+    height: 41px;
+    margin-top: 7px;
+    outline: none;
+    width: 100%;
+    &__detail {
+      border-radius: 1px;
+      box-sizing: border-box;
+      display: block;
+      height: 212px;
+      margin-top: 7px;
+      outline: none;
+      width: 100%;
+    }
+  }
+  &-policy {
+    text-align: left;
+    &__inner {
+      border: 1px solid $color-04;
+      height: 252px;
+      margin-top: 10px;
+      overflow: scroll;
+    }
+    &__text {
+      font-size: 16px;
+      letter-spacing: 0.06px;
+      line-height: 24px;
+      padding: 10px;
+    }
+  }
+  &-consent {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    &__text {
+      font-family: 'Noto Sans JP';
+      font-size: 16px;
+      letter-spacing: 0.06px;
+      line-height: 24px;
+      margin-left: 10px;
+    }
+    &__check {
+      height: 20px;
+      margin: 0;
+      width: 20px;
+    }
+  }
+  @include mq ('sp') {
+    padding: 80px 15px;
+  }
+}

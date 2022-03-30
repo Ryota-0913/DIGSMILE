@@ -1,0 +1,11 @@
+.footer {
+  background-color: $color-02;
+  &-copy {
+    font-size: 10px;
+    font-family: 'Montserrat Medium';
+    text-align: center;
+    padding: 20px 0;
+    color: $color-01;
+    letter-spacing: 0.15px;
+  }
+}

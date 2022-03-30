@@ -1,0 +1,9 @@
+.works {
+  margin: 0!important;
+  &-image {
+    margin-top: 30px;
+  }
+  @include mq ('sp') {
+    padding-top: 20px;
+  }
+}

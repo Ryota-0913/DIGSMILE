@@ -1,0 +1,15 @@
+.header {
+  position: fixed;
+  z-index: 200;
+  width: 100%;
+  &-inner {
+    justify-content: space-between;
+    display: flex;
+    padding: 30px 58px;
+  }
+}
+
+.header-title.black svg path {
+  fill: #333;
+  transition: fill .3s;
+}

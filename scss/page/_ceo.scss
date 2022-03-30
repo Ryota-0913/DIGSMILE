@@ -1,0 +1,41 @@
+.ceo {
+  position: relative;
+  &-inner {
+    background-color: $color-07;
+    margin-left: 330px;
+    margin-top: 80px;
+    max-width: 770px;
+    padding: 120px 185px 95px;
+  }
+  &-image {
+    position: absolute;
+    top: 0;
+    & img {
+      width: 100%;
+    }
+  }
+  &-message {
+    font-family: 'Noto Sans JP';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-top: 30px;
+  }
+  @include mq ('tab') {
+    &-image {
+      left: -15px;
+    }
+  }
+  @include mq ('sp') {
+    &-inner {
+      margin-left: 0;
+      margin-top: 90px;
+      padding: 126px 28.5px 80px;
+    }
+    &-image {
+      & img {
+        height: 230px;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.section {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 60px 15px;
+  &-large {
+    margin: 0 auto;
+    max-width: 1100px;
+  }
+  &-title {
+    font-family: 'Montserrat';
+    font-size: 32px;
+    letter-spacing: 2.18px;
+  }
+  &-text {
+    font-family: '游ゴシック体';
+    font-size: 16px;
+    margin: 30px 0;
+  }
+  @include mq ('sp') {
+    padding: 40px 15px;
+    &-title {
+      font-size: 28px;
+      letter-spacing: 1.9px;
+    }
+    &-text {
+      font-size: 14px;
+    }
+  }
+}
+.container {
+  &-large {
+    background-color: $color-07;
+    position: relative;
+  }
+  &-small {
+    align-items: center;
+  }
+  @include mq ('sp') {
+  }
+}

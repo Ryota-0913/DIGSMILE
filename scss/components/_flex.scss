@@ -1,0 +1,10 @@
+.flex {
+  display: flex;
+  justify-content: space-between;
+  @include mq ('sp') {
+    flex-direction: column;
+    &:last-of-type {
+      flex-direction: column-reverse;
+    }
+  }
+}
